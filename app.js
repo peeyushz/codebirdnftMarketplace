@@ -51,7 +51,7 @@ app.use(helmet({
     crossOriginResourcePolicy: false,
   }));
 app.use(cors({
-    "origin": "*"
+    "origin": "https://codebird-nft2.web.app"
 }));
 
 // mongodb connection
