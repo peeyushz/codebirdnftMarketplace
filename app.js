@@ -48,7 +48,12 @@ app.use(morgan('tiny'));
 
 //helmet and cors
 
-app.use(cors());
+app.use(cors({
+  "Access-Control-Allow-Origin" : "*",
+  "Access-Control-Allow-Credentials" : "true",
+  "Access-Control-Allow-Methods" : 'GET, POST, OPTIONS",
+  "Access-Control-Allow-Headers" : "Origin, Content-Type, Accept"
+}));
 
 // mongodb connection
 connectDB();
