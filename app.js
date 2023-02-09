@@ -49,8 +49,7 @@ app.use(morgan('tiny'));
 //helmet and cors
 
 app.use(cors({
-  "origin": ["https://fancy-fly-polo-shirt.cyclic.app/", "https://codebird-nftt.web.app"]
-  "Access-Control-Allow-Origin" : "*",
+  "origin": ["https://fancy-fly-polo-shirt.cyclic.app/", "https://codebird-nftt.web.app"],
   "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept",
   "methods": "GET,POST, OPTION"
 }));
