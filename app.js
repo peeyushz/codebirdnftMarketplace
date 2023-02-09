@@ -54,6 +54,11 @@ app.use(cors({
   "methods": "GET,POST, OPTION"
 }));
 
+app.use(function (request, response, next) {
+  response.header("Access-Control-Allow-Origin", "https://codebird-nftt.web.app");
+  next();
+});
+
 // mongodb connection
 connectDB();
 
@@ -71,5 +76,5 @@ app.use('/', require('./server/routes/router'));
 // app.get('/nftdatabytoken', nftfetch.saveNftByToken);
 // app.get('/deletenftdata', nftfetch.deleteAllNftData);
 
-app.listen(3000, () => { console.log(`Server is running on http://localhost:${3000}`) });
+app.listen(PORT, () => { console.log(`Server is running on http://localhost:${PORT}`) });
 // https.createServer(options, app).listen(PORT, ()=> { console.log(`Server is running on ${Date.now()}`)});
