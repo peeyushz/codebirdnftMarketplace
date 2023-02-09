@@ -49,10 +49,8 @@ app.use(morgan('tiny'));
 //helmet and cors
 
 app.use(cors({
-  "Access-Control-Allow-Origin" : "*",
-  "Access-Control-Allow-Credentials" : "true",
-  "Access-Control-Allow-Methods" : 'GET, POST, OPTIONS",
-  "Access-Control-Allow-Headers" : "Origin, Content-Type, Accept"
+  "origin":"https://codebird-nftt.web.app",
+  "optionSuccessStatus":200,
 }));
 
 // mongodb connection
