@@ -52,6 +52,10 @@ app.use(cors({
   "Access-Control-Allow-Origin":"*",
   "methods":"GET, POST, OPTION"
 }));
+app.use(function (request, response, next) {
+  response.header("Access-Control-Allow-Origin", "https://codebird-nftt.web.app");
+  next();
+});
 
 // mongodb connection
 connectDB();
