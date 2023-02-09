@@ -49,7 +49,7 @@ app.use(morgan('tiny'));
 //helmet and cors
 
 app.use(cors({
-   "Access-Control-Allow-Origin" : "*"
+   "Access-Control-Allow-Origin" : "http://localhost:3001"
 }));
 
 // mongodb connection
