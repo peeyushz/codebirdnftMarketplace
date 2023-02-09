@@ -50,7 +50,7 @@ app.use(morgan('tiny'));
 
 app.use(cors({
   "Access-Control-Allow-Origin": '*',
-  "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept",
+//   "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept",
   "methods": "GET,POST, OPTION"
 }));
 
