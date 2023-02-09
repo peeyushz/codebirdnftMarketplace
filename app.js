@@ -50,9 +50,7 @@ app.use(morgan('tiny'));
 app.use(helmet({
     crossOriginResourcePolicy: false,
   }));
-app.use(cors({
-    "origin": "https://codebird-nft2.web.app"
-}));
+app.use(cors());
 
 // mongodb connection
 connectDB();
