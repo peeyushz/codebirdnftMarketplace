@@ -48,9 +48,7 @@ app.use(morgan('tiny'));
 
 //helmet and cors
 
-app.use(cors({
-   "Access-Control-Allow-Origin" : "*"
-}));
+app.use(cors());
 
 // mongodb connection
 connectDB();
