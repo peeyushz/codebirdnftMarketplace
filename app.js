@@ -47,11 +47,9 @@ const PORT = process.env.PORT || 8443
 app.use(morgan('tiny'));
 
 //helmet and cors
-app.use(helmet({
-    crossOriginResourcePolicy: false,
-  }));
+
 app.use(cors({
-   "Access-Control-Allow-Origin":"*"
+   "Access-Control-Allow-Origin" : "*"
 }));
 
 // mongodb connection
