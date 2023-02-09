@@ -49,7 +49,7 @@ app.use(morgan('tiny'));
 //helmet and cors
 
 app.use(cors({
-  "origin": ["https://fancy-fly-polo-shirt.cyclic.app/", "https://codebird-nftt.web.app"],
+  "Access-Control-Allow-Origin": '*',
   "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept",
   "methods": "GET,POST, OPTION"
 }));
@@ -71,5 +71,5 @@ app.use('/', require('./server/routes/router'));
 // app.get('/nftdatabytoken', nftfetch.saveNftByToken);
 // app.get('/deletenftdata', nftfetch.deleteAllNftData);
 
-app.listen(PORT, () => { console.log(`Server is running on http://localhost:${PORT}`) });
+app.listen(3000, () => { console.log(`Server is running on http://localhost:${3000}`) });
 // https.createServer(options, app).listen(PORT, ()=> { console.log(`Server is running on ${Date.now()}`)});
